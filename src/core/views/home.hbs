@@ -1,0 +1,12 @@
+{{#if accessToken}}
+    <div>
+        <strong>Access Token:</strong>
+        <pre>{{accessToken}}</pre>
+    </div>
+    <div><a href="/auth-code-flow/logout">Logout</a></div>
+{{else}}
+    <h1>Welcome to the Home Page</h1>
+
+    <a href="/auth-code-flow/login">Login</a>
+    <a href="/auth-code-flow/register">Sign Up</a>
+{{/if}}
